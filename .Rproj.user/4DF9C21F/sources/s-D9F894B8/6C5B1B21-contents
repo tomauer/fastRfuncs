@@ -1,0 +1,15 @@
+double fast_med(const Rcpp::NumericVector& x) {
+  Rcpp::NumericVector xx = Rcpp::clone(x);
+  Rcpp::NumericVector::iterator last = std::remove_if(xx.begin(),xx.end(),R_IsNA);
+  Rcpp::NumericVector::iterator start = xx.begin();
+  double F;
+  const int sz=last-start,middle=sz/2-1;
+  if(sz%2==0){
+    std::nth_element(start,start+middle,last);
+    F=(xx[middle]+*(std::min_element(start+middle+1,last)))/2.0;
+  }else{
+    std::nth_element(start,start+middle+1,last);
+    F=xx[middle+1];
+  }
+  return F;
+}

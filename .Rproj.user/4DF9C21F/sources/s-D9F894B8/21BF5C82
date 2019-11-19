@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574175679848.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1997178187",
+    "id" : "21BF5C82",
+    "lastKnownWriteTime" : 1574175715,
+    "last_content_update" : 1574175715263,
+    "path" : "~/fastRfuncs/src/fast_med.cpp",
+    "project_path" : "src/fast_med.cpp",
+    "properties" : {
+        "cursorPosition" : "28,1",
+        "scrollLine" : "3",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}
